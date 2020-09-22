@@ -1,0 +1,1 @@
+docker build -t magento/php:7.0 .

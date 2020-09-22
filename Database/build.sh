@@ -1,0 +1,1 @@
+docker build -t magento/mariadb:10.5.5 .

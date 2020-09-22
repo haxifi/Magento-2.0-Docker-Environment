@@ -1,0 +1,2 @@
+FROM mariadb:10.5.5
+ENV MYSQL_DATABASE=magento
