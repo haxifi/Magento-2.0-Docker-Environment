@@ -21,4 +21,4 @@ run php composer to install dependancy
 
 and set permission to ```var directory```
 
-```chmod -R a+w var/```
+```chmod -R a+w *```
