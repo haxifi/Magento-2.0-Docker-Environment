@@ -17,6 +17,7 @@ RUN docker-php-ext-configure gd --with-gd --with-webp-dir --with-jpeg-dir \
     --with-png-dir --with-zlib-dir --with-xpm-dir --with-freetype-dir \
     --enable-gd-native-ttf
 RUN docker-php-ext-install gd
+RUN pecl install xdebug-2.5.0 && docker-php-ext-enable xdebug
 COPY php.ini /usr/local/etc/php/conf.d/php.ini-production
 RUN usermod -u 1000 www-data
 RUN usermod -G staff www-data

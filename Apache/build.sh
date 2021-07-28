@@ -1,1 +1,1 @@
-docker build -t magento/php:7.0 .
+docker build -t magento/php:7.0.33 .
