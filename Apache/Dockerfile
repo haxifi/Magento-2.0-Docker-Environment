@@ -10,6 +10,8 @@ RUN apt-get -y update \
 && docker-php-ext-configure intl \
 && docker-php-ext-install intl
 RUN docker-php-ext-install mbstring
+RUN docker-php-ext-install bcmath
+RUN docker-php-ext-install soap
 RUN docker-php-ext-install zip
 RUN docker-php-ext-install xsl
 RUN docker-php-ext-install mcrypt
